@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+<!--    <com.kingsley.androidview.views.WaveView-->
+<!--        android:id="@+id/waveLoading"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:text="Hello World!" />-->
+
+<!--    <SeekBar-->
+<!--        android:id="@+id/seekBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/waveLoading"-->
+<!--        android:layout_marginTop="20dp" />-->
+
+        <com.kingsley.androidview.views.WaveCircleView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/wave_circle"
+            />
+
+</RelativeLayout>
