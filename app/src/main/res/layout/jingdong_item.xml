@@ -4,12 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:gravity="center" >
-    <com.zhangqi.jingdongrefreshlistview.FirstSetpView
+    <com.kingsley.androidview.JDRefresh.FirstStepView
         android:id="@+id/first_step_view"
         android:layout_width="45dp"
         android:layout_height="70dp"
         />
-    <com.zhangqi.jingdongrefreshlistview.SecondStepView
+    <com.kingsley.androidview.JDRefresh.SecondStepView
         android:id="@+id/second_step_view"
         android:layout_width="45dp"
         android:layout_height="70dp"

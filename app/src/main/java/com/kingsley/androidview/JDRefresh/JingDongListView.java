@@ -1,4 +1,4 @@
-package com.zhangqi.jingdongrefreshlistview;
+package com.kingsley.androidview.JDRefresh;
 
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;
@@ -14,6 +14,8 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.kingsley.androidview.R;
 
 import java.text.SimpleDateFormat;
 
@@ -40,7 +42,7 @@ public class JingDongListView extends ListView implements AbsListView.OnScrollLi
 	private FrameLayout mAnimContainer;
 	private Animation animation;
 	private SimpleDateFormat format;
-	private FirstSetpView firstSetpView;
+	private FirstStepView firstSetpView;
 	private SecondStepView secondStepView;
 	private AnimationDrawable secondAnimation;
 
@@ -79,7 +81,7 @@ public class JingDongListView extends ListView implements AbsListView.OnScrollLi
 		
 		headerView = (LinearLayout) LayoutInflater.from(context).inflate(R.layout.jingdong_item, null, false);
 		tv_pull_to_refresh = (TextView) headerView.findViewById(R.id.tv_pull_to_refresh);
-		firstSetpView = (FirstSetpView) headerView.findViewById(R.id.first_step_view);
+		firstSetpView = (FirstStepView) headerView.findViewById(R.id.first_step_view);
 		secondStepView = (SecondStepView) headerView.findViewById(R.id.second_step_view);
 		secondStepView.setBackgroundResource(R.drawable.second_step_animation);
 		secondAnimation = (AnimationDrawable) secondStepView.getBackground();

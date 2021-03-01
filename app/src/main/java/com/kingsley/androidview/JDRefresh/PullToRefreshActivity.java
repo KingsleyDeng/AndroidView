@@ -1,10 +1,12 @@
-package com.zhangqi.jingdongrefreshlistview;
+package com.kingsley.androidview.JDRefresh;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.widget.ArrayAdapter;
+
+import com.kingsley.androidview.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

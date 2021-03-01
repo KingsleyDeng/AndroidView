@@ -24,7 +24,7 @@ public class WaveCircleView extends View {
 
     private long mDuration = 2000;
 
-    private int mSpeed = 500;
+    private int mSpeed = 1000;
 
     private float mMaxRadiusRate = 0.85f;
 

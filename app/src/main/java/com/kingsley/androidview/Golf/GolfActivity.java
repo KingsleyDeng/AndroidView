@@ -1,25 +1,26 @@
-package com.kingsley.androidview.JDRefresh;
+package com.kingsley.androidview.Golf;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.SeekBar;
 
+import com.kingsley.androidview.JDRefresh.FirstStepView;
 import com.kingsley.androidview.R;
 
-public class MainActivity extends AppCompatActivity {
-
+public class GolfActivity extends AppCompatActivity {
 
     private SeekBar sb;
-    private FirstStepView mFirstStepView;
+    private GolfView mGolfView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_golf);
+
 
         sb = (SeekBar) findViewById(R.id.seekbar);
-        mFirstStepView = (FirstStepView) findViewById(R.id.firstview);
+        mGolfView = (GolfView) findViewById(R.id.golfview);
         sb.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
             @Override
@@ -36,9 +37,10 @@ public class MainActivity extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int progress,
                                           boolean fromUser) {
                 float currentProgress = (float) seekBar.getProgress() / (float) seekBar.getMax();
-                mFirstStepView.setCurrentProgress(currentProgress);
-                mFirstStepView.invalidate();
+                mGolfView.setCurrentProgress(currentProgress);
+                mGolfView.invalidate();
             }
         });
+
     }
 }
